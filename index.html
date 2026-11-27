@@ -3942,7 +3942,7 @@ const ESSAYS = [
         const note = document.createElement('div');
         note.className = 'cred-note';
         note.innerHTML = '<svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M12 7.6v.02M12 11.2v5.2" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/></svg>' +
-            '<span>账号和密码都可以改，改错会提示「账号或密码错误」。</span>';
+            '<span>账号密码已预填。</span>';
         const anchor = authUserEl.closest('.mini-field') || authUserEl.parentElement;
         if (anchor && anchor.parentElement) anchor.parentElement.insertBefore(note, anchor);
     }
@@ -3954,7 +3954,7 @@ const ESSAYS = [
         authTitleEl.textContent = on ? '账号' : '登录';
         authSubEl.textContent = on
             ? ('当前已登录：' + currentUser.name + '。可以直接退出，也可以换个账号重登。')
-            : '账号密码已经替你填好了，直接点「登录」即可；也可以自己改，改错会提示「账号或密码错误」。';
+            : '账号密码已预填且唯一，修改会报错，不建议修改。';
         authSubmitEl.hidden = on;
         authLogoutEl.hidden = !on;
         setAuthBusy(false);
