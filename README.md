@@ -5,7 +5,7 @@
 视觉基调是浅色的「液态玻璃」：半透明玻璃卡片叠在樱花背景上，顶部是一条胶囊导航。全站只做浅色与深色两套主题。
 
 **在线访问**：<https://wanfengteng.github.io/my-homepage/>
-**Gitee 镜像**：<https://gitee.com/wan-feng-a/deepseek>
+**Gitee 镜像**：<https://gitee.com/wan-feng-a/blog>
 
 ---
 
@@ -30,7 +30,7 @@
 
 ## 技术栈
 
-- **HTML5**：`header` / `nav` / `main` / `section` / `article` / `figure` / `footer` 语义化标签
+- **HTML5**：`nav` / `main` / `section` / `article` / `figure` / `figcaption` / `aside` / `footer` 语义化标签
 - **CSS3**：Flex、Grid、圆角与连续曲率（`corner-shape: squircle`）、阴影、渐变、过渡、关键帧动画、`transform`、`backdrop-filter`、`clamp()`
 - **JavaScript**：原生，无框架，无打包工具
 - **Canvas 2D**：樱花花瓣逐帧下落
