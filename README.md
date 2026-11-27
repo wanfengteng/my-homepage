@@ -4,8 +4,9 @@
 
 视觉基调是浅色的「液态玻璃」：半透明玻璃卡片叠在樱花背景上，顶部是一条胶囊导航。全站只做浅色与深色两套主题。
 
-**在线访问**：<https://wanfengteng.github.io/my-homepage/>
+**在线访问**：<https://my-homepage-cnj.pages.dev/> （Cloudflare Pages）
 
+- 备用地址（GitHub Pages）：<https://wanfengteng.github.io/my-homepage/>
 - 主仓库（Gitee）：<https://gitee.com/wan-feng-a/blog>
 - 镜像仓库（GitHub）：<https://github.com/wanfengteng/my-homepage>
 
@@ -28,22 +29,22 @@
 | `#archive` 归档 | 一条正弦曲线串起来的时光河流 |
 | `#contact` 留言 | 联系方式、留言表单、二维码 |
 
-页面按「固定层 / 视图层 / 浮层层 / 页脚」四层组织：固定层用 `position: fixed` 挂住背景、花瓣与导航；视图层是十个 `section.view`，只有带 `.active` 的那个显示；浮层层放登录浮窗、播放器、灯箱、阅读页。
+页面按「固定层 / 视图层 / 浮层层 / 页脚」四层组织：固定层用 `position: fixed` 挂住背景、花瓣与导航（导航外层是 `<header class="nav-wrap">`，内部是 `<nav class="nav-links">`）；视图层是十个 `section.view`，只有带 `.active` 的那个显示；浮层层放登录浮窗、播放器、灯箱、阅读页。
 
 ## 技术栈
 
-- **HTML5**：`nav` / `main` / `section` / `article` / `figure` / `figcaption` / `aside` / `footer` 语义化标签
-- **CSS3**：Flex、Grid、圆角与连续曲率（`corner-shape: squircle`）、阴影、渐变、过渡、关键帧动画、`transform`、`backdrop-filter`、`clamp()`
+- **HTML5**：`header` / `nav` / `main` / `section` / `article` / `figure` / `figcaption` / `aside` / `footer` 语义化标签
+- **CSS3**：Flex（98 处）、Grid（43 处）、圆角与连续曲率（`corner-shape: squircle`）、阴影、渐变、过渡、关键帧动画、`transform`、`backdrop-filter`、`clamp()`
 - **JavaScript**：原生，无框架，无打包工具
 - **Canvas 2D**：樱花花瓣逐帧下落
-- **WebGL**：卡片边缘的液态折射着色器
+- **WebGL**：首页个人资料卡与音乐卡的液态玻璃折射着色器（边缘位移 + 轻微色散）
 - **localStorage**：说说、评论、点赞、主题偏好、登录状态
 
 ## 目录结构
 
 ```
 .
-├── index.html          # 全部结构 / 样式 / 脚本（单文件）
+├── index.html          # 全部结构 / 样式 / 脚本（单文件；Gitee 仓库中位于 my_blog/ 下）
 ├── images/             # 头像、背景、作品封面、相册、文章封面、二维码
 ├── audio/              # 音乐卡曲目
 └── videos/             # 视频卡片素材
