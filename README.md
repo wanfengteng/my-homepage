@@ -5,7 +5,9 @@
 视觉基调是浅色的「液态玻璃」：半透明玻璃卡片叠在樱花背景上，顶部是一条胶囊导航。全站只做浅色与深色两套主题。
 
 **在线访问**：<https://wanfengteng.github.io/my-homepage/>
-**Gitee 镜像**：<https://gitee.com/wan-feng-a/blog>
+
+- 主仓库（Gitee）：<https://gitee.com/wan-feng-a/blog>
+- 镜像仓库（GitHub）：<https://github.com/wanfengteng/my-homepage>
 
 ---
 
